@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+    <div class="hearts"></div>
+
+    <!-- PAGE 1 LOGIN -->
+    <section class="page active" id="page1">
+
+        <div class="glass-box">
+
+            <h1>💖 Welcome 💖</h1>
+
+            <input type="text"
+                id="username"
+                placeholder="Enter Nickname">
+
+            <input type="password"
+                id="password"
+                placeholder="Enter DOB (DD/MM/YYYY)">
+
+            <button onclick="login()">
+                Open Surprise 🎁
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </section>
+
+    <!-- PAGE 2 GAME -->
+    <section class="page" id="page2">
+
+        <h1>💝 Memory Game 💝</h1>
+
+        <div class="game-board"
+            id="gameBoard"></div>
+
+        <p id="result"></p>
+
+        <button onclick="goToPage(3)">
+            Continue 💌
+        </button>
+
+    </section>
+
+    <!-- PAGE 3 MESSAGE -->
+    <section class="page" id="page3">
+
+        <div class="glass-box">
+
+            <h1>❤️ Special Message ❤️</h1>
+
+            <p class="message">
+
+                Dear Sister 💖 <br><br>
+
+                You are the best gift in my life.
+
+                Thank you for supporting me,
+                caring for me,
+                and making every moment beautiful.
+
+                I always pray for your happiness,
+                success, smiles, and endless love ❤️
+
+                Happy Birthday Dimpu 🎂✨
+
+            </p>
+
+            <button onclick="goToPage(4)">
+                Final Surprise 🎉
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- PAGE 4 FINAL -->
+    <section class="page" id="page4">
+
+        <div class="final-box">
+
+            <h1 class="glow">
+                🎉 HAPPY BIRTHDAY DIMPU 🎉
+            </h1>
+
+            <p class="final-text">
+
+                May your life be filled with
+                love, happiness,
+                success, joy,
+                and beautiful memories ❤️
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
