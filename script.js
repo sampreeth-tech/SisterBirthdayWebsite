@@ -12,6 +12,15 @@ function login(){
         password === "19/06/2008"
     ){
 
+        /* PLAY MUSIC */
+
+        const music =
+            document.getElementById(
+                "birthdayMusic"
+            );
+
+        music.play();
+
         goToPage(2);
 
     }else{
