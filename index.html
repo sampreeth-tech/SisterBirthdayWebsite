@@ -2,21 +2,34 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
 
     <title>Happy Birthday</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+    <!-- BACKGROUND MUSIC -->
+
+    <audio id="birthdayMusic" loop>
+
+        <source src="music.mp3" type="audio/mpeg">
+
+    </audio>
+
     <!-- FLOATING HEARTS -->
+
     <div class="hearts"></div>
 
     <!-- PAGE 1 LOGIN -->
+
     <section class="page active" id="page1">
 
         <div class="glass-box">
@@ -32,7 +45,9 @@
                 placeholder="Enter DOB (DD/MM/YYYY)">
 
             <button onclick="login()">
+
                 Open Surprise 🎁
+
             </button>
 
             <p id="error"></p>
@@ -42,6 +57,7 @@
     </section>
 
     <!-- PAGE 2 GAME -->
+
     <section class="page" id="page2">
 
         <h1>💝 Memory Game 💝</h1>
@@ -52,12 +68,15 @@
         <p id="result"></p>
 
         <button onclick="goToPage(3)">
+
             Continue 💌
+
         </button>
 
     </section>
 
     <!-- PAGE 3 MESSAGE -->
+
     <section class="page" id="page3">
 
         <div class="glass-box">
@@ -82,7 +101,9 @@
             </p>
 
             <button onclick="goToPage(4)">
+
                 Final Surprise 🎉
+
             </button>
 
         </div>
@@ -90,12 +111,15 @@
     </section>
 
     <!-- PAGE 4 FINAL -->
+
     <section class="page" id="page4">
 
         <div class="final-box">
 
             <h1 class="glow">
+
                 🎉 HAPPY BIRTHDAY DIMPU 🎉
+
             </h1>
 
             <p class="final-text">
@@ -114,4 +138,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
